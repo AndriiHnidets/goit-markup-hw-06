@@ -372,6 +372,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-section-3">
+                <div class="footer-text">Подпишитесь на рассылку</div>
+                <div class="footer-input-contact">
+                    <input type="email" class="footer-input-mail" placeholder="E-mail" name="Почта" required>
+                    <button class="footer-button" type="submit">Подписаться</button>
+                </div>
+            </div>
         </div>
        
     </footer>
@@ -402,23 +409,21 @@
                 required
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                 title="+380 (..) ...-..-.."
+                value="+380"
                 >
                 </label>
                 <label  class="modal-input-title">Почта
                 <input
-                type="email"
+               type="email"
                  class="form-input" 
                  placeholder="Почта*" 
                  name="Почта" 
                  required>
+                 
                 </label>
-                <label  class="modal-input-title">Коментарий
-                <input
-                type="text" 
-                class="form-input-2" 
-                placeholder="">
-                </label>
-                <button class="modal-button" type="submit" >Отправить</button>
+                <label  class="modal-input-title">Коментарий</label>
+                <textarea class="form-input-2"  name="user-text" id="user-text" placeholder="Введите текст"></textarea>
+               <button class="modal-button" type="submit" >Отправить</button>
             </form>
         </div>
     </div>
