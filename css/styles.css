@@ -1260,6 +1260,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /*footer*/
 .footer {
   background: #2f303a;
@@ -1322,6 +1323,10 @@ img {
   right: 8px;
   top: 8px;
 }
+
+.modal-button-close:focus + .modal-close-icon {
+  fill: #2196f3;
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1329,6 +1334,7 @@ img {
 }
 .modal-close-icon {
   fill: #000000;
+  transition: fill 500ms;
 }
 .modal-title {
   font-style: normal;
@@ -1347,6 +1353,17 @@ img {
   border-radius: 4px;
   margin-bottom: 28px;
   margin-top: 4px;
+  padding-left: 40px;
+  transition: border-color 500ms;
+}
+.form-input:focus {
+  border-color: #2196f3;
+}
+.form-input-2:focus {
+  border-color: #2196f3;
+}
+.form-input:focus + .input-icon-title {
+  fill: #2196f3;
 }
 .form-input-2 {
   width: 100%;
@@ -1364,6 +1381,16 @@ img {
   letter-spacing: 0.01em;
   padding: 12px;
   color: rgba(117, 117, 117, 0.5);
+}
+.input-icon-title {
+  position: absolute;
+  left: 15px;
+  top: 30%;
+  transform: translateY(-50%);
+  transition: fill 500ms;
+}
+.input-wrap {
+  position: relative;
 }
 .modal-button {
   width: 200px;
