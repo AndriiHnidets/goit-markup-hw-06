@@ -1424,6 +1424,11 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
 }
+.form-field {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+}
 .check-text {
   font-style: normal;
   font-weight: normal;
@@ -1431,19 +1436,36 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  display: flex;
 }
-.check-text::before {
+/*.check-text::before {
   content: '';
   width: 16px;
   height: 15px;
   border-radius: 4px;
   margin-right: 8px;
-}
+}*/ /*
 .policy-check:checked + .check-text::before {
   border: none;
   background-image: url(../images/modal/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}*/
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.policy-icon {
+  fill: transparent;
+}
+.policy-check:checked + .check-text span {
+  border: none;
+}
+/*.policy-check:checked + .check-text .policy-icon {
+  fill: #ffffff;
+}*/
+.policy-check {
+  margin-left: 13px;
 }
