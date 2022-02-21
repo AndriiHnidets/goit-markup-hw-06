@@ -46,8 +46,6 @@ html {
   display: flex;
   position: relative;
 }
-.header-items:not(:last-child) {
-}
 .header-items {
   transition: color 250ms linear;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
@@ -170,8 +168,6 @@ html {
   display: flex;
   margin-left: auto;
 }
-.header-info-mail {
-}
 .header-title-contacts {
   font-family: Roboto;
   font-style: normal;
@@ -212,12 +208,12 @@ html {
   transition: color 250ms linear;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-mail-item {
-  margin-right: ;
-}
+/*.header-mail-item {
+  margin-right:;
+
 .header-tel-item {
   margin-right: ;
-}
+}}*/
 .header-mail-icon {
   fill: #757575;
   margin-right: 10px;
@@ -1280,9 +1276,6 @@ img {
   display: flex;
   flex-direction: column;
 }
-.footer-portfolio-list {
-}
-
 /*modalka*/
 .backdrop {
   width: 100vw;
