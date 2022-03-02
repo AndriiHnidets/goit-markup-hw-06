@@ -377,7 +377,7 @@
                 <div class="footer-input-contact">
                     <input type="email" class="footer-input-mail" placeholder="E-mail" name="Почта" required>
                     <button class="footer-button" type="submit">Подписаться
-                        <svg class="footer-send" width="24" height="24">
+                        <svg class="footer-subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send-1"></use>
                         </svg>
                     </button>
@@ -400,7 +400,7 @@
                 <input 
                 type="text" 
                 class="form-input" 
-                placeholder="Имя*" 
+                placeholder="" 
                 name="Имя" 
                 required
                 minlenght="3">
@@ -414,12 +414,12 @@
                 <input 
                 type="tel" 
                 class="form-input" 
-                placeholder="+380 (..) ...-..-.. *" 
+                placeholder="" 
                 name="Телефон" 
                 required
                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                 title="+380 (..) ...-..-.."
-                value="+380"
+                value=""
                 >
                 <svg class="input-icon-title" width="12" height="12">
                     <use href="./images/modal/modal-icons.svg#icon-tel"></use>
@@ -431,7 +431,7 @@
                 <input
                type="email"
                  class="form-input" 
-                 placeholder="Почта*" 
+                 placeholder="" 
                  name="Почта" 
                  required>
                 <svg class="input-icon-title" width="15" height="12">
@@ -443,6 +443,7 @@
                 <textarea class="form-input-2"  
                 name="user-text" 
                 id="user-text" 
+                rows="8"
                 placeholder="Введите текст"></textarea>
                 <div class="form-field">
                     <input type="checkbox" 

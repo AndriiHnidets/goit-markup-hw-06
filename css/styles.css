@@ -1276,6 +1276,11 @@ img {
   display: flex;
   flex-direction: column;
 }
+.footer-subscribe-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
 /*modalka*/
 .backdrop {
   width: 100vw;
@@ -1316,8 +1321,8 @@ img {
   right: 8px;
   top: 8px;
 }
-
-.modal-button-close:focus + .modal-close-icon {
+.modal-button-close:hover .modal-close-icon,
+.modal-button-close:focus .modal-close-icon {
   fill: #2196f3;
 }
 .is-hidden {
@@ -1326,8 +1331,10 @@ img {
   pointer-events: none;
 }
 .modal-close-icon {
-  fill: #000000;
-  transition: fill 500ms;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   font-style: normal;
@@ -1349,11 +1356,13 @@ img {
   padding-left: 40px;
   transition: border-color 500ms;
 }
+.form-input:hover,
 .form-input:focus {
-  border-color: #2196f3;
+  border: 1px solid #2196f3;
 }
+.form-input-2:hover,
 .form-input-2:focus {
-  border-color: #2196f3;
+  border: 1px solid #2196f3;
 }
 .form-input:focus + .input-icon-title {
   fill: #2196f3;
