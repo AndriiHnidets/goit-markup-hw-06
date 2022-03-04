@@ -900,7 +900,7 @@ html {
   padding-right: 29px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 62px;
+  padding-right: 28px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1280,6 +1280,7 @@ img {
   fill: white;
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
 /*modalka*/
 .backdrop {
