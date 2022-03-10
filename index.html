@@ -28,8 +28,8 @@
         <div class="header-container-2">
                    <a class="link header-index-logo animate__animated animate__tada animate__delay-2s	2s animate__repeat-3	3" lang="en" href=""> <span class="header-logo-blue">Web</span><span class="header-logo-black">Studio</span></a>
                 <ul class="list header-item">
-                    <li><a class="link header-title-index-studio header-items" href="">Студия</a></li>
-                    <li><a class="link header-title-index-portfolio header-items" href="portfolio.html">Портфолио</a></li>
+                    <li class="header-studio"><a class="link header-title-index-studio header-items" href="">Студия</a></li>
+                    <li class="header-portfolio"><a class="link header-title-index-portfolio header-items" href="portfolio.html">Портфолио</a></li>
                     <li><a class="link header-title-contacts header-items" href="">Контакты</a></li>
                 </ul>
             <ul class="list header-info">
@@ -39,8 +39,8 @@
                 </svg>
                 info@devstudio.com</a></li>
                 <li class="link header-info-tel"><a class="link header-info-tel" href="+380961111111">
-                    <svg class="header-tel-icon" width="16" height="12">
-                    <use href="./images/symbol.svg#icon-smartphone-1"></use>
+                    <svg class="header-tel-icon" width="16" height="16">
+                    <use href="./images/header/smartphone.svg#icon-smartphone-1"></use>
                 </svg>
                 +38 096 111 11 11</a></li>
             </ul>
@@ -395,8 +395,8 @@
                 </svg></button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#">
-                <label class="modal-input-title">Имя</label>
                 <div class="input-wrap">
+                <label class="modal-input-title">Имя</label>
                 <input 
                 type="text" 
                 class="form-input" 
@@ -408,9 +408,8 @@
                     <use href="./images/modal/modal-icons.svg#icon-person"></use>
                 </svg>
                 </div>
-                
-                <label class="modal-input-title">Телефон</label>
                 <div class="input-wrap">
+                <label class="modal-input-title">Телефон</label>
                 <input 
                 type="tel" 
                 class="form-input" 
@@ -426,8 +425,8 @@
                 </svg>
                 </div>
                 
-                <label  class="modal-input-title">Почта</label>
                 <div class="input-wrap">
+                <label  class="modal-input-title">Почта</label>
                 <input
                  type="email"
                  class="form-input" 
@@ -437,7 +436,7 @@
                     <use href="./images/modal/modal-icons.svg#icon-mail"></use>
                 </svg>
                 </div>
-                
+                <div class="modal-textarea">
                 <label  class="modal-input-title">Коментарий</label>
                 <textarea class="form-input-2"  
                 name="user-text" 
@@ -445,6 +444,7 @@
                 rows="8"
                 placeholder="Введите текст"
                 required></textarea>
+                </div>
                 <div class="form-field">
                     <input type="checkbox" 
                     name="policy" 
@@ -455,12 +455,10 @@
                     for="policy" class="check-text"
                     ><svg class="policy-icon" width="16" height="15">
                         <use href="./images/modal/v-ident.svg#icon-check"></use>
-                    </svg><div class="check-text-2" >Соглашаюсь с рассылкой и принимаю <a class="form-field-rools" href="">Условия договора</a></div></label
+                    </svg>Соглашаюсь с рассылкой и принимаю <a class="form-field-rools" href="">Условия договора</a></label
                     >
                 </div>
-                <div class="modal-button-main">
                <button class="modal-button" type="submit" >Отправить</button>
-            </div>
             </form>
         </div>
     </div>

@@ -115,6 +115,9 @@ html {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #2196f3;
+  margin-right: ;
+}
+.header-studio {
   margin-right: 50px;
 }
 .header-title-index-studio:hover,
@@ -158,6 +161,8 @@ html {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.header-portfolio {
   margin-right: 50px;
 }
 .header-title-index-portfolio:hover,
@@ -221,6 +226,8 @@ html {
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel-icon {
+  width: 16px;
+  height: 16px;
   fill: #757575;
   margin-right: 10px;
   transition: color 250ms linear;
@@ -1300,8 +1307,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
-  width: 500px;
-  min-height: 500px;
+  width: 528px;
+  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1352,7 +1359,6 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   margin-top: 4px;
   padding-left: 40px;
   transition: border-color 500ms;
@@ -1388,7 +1394,6 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 20px;
   margin-top: 4px;
   padding: 12px;
   outline: none;
@@ -1401,12 +1406,13 @@ img {
 .input-icon-title {
   position: absolute;
   left: 15px;
-  top: 30%;
+  top: 50%;
   /*transform: translateY(-50%);*/
   transition: fill 500ms;
 }
 .input-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 .form-input:is(:focus, :valid) {
   border-color: #2196f3;
@@ -1430,15 +1436,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: linear;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 124px;
+  margin-left: 124px;
 }
 .modal-button:hover,
 .modal-button:focus {
   background: #188ce8;
 }
-.modal-button-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.modal-textarea {
+  margin-bottom: 20px;
 }
 .modal-input-title {
   font-style: normal;
@@ -1452,6 +1458,7 @@ img {
   margin-bottom: 30px;
   display: flex;
   align-items: baseline;
+  margin-left: 12px;
 }
 .check-text {
   font-style: normal;
@@ -1488,15 +1495,11 @@ img {
 .policy-check:checked + .check-text span {
   border: none;
 }
-.check-text-2 {
-  text-align: left;
-  white-space: nowrap;
-}
 /*.policy-check:checked + .check-text .policy-icon {
   fill: #ffffff;
 }*/
 .policy-check {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 .form-field-rools {
   font-family: Roboto;
