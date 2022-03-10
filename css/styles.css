@@ -1511,3 +1511,31 @@ img {
   color: #2196f3;
   text-decoration: underline;
 }
+.check {
+  padding-left: 1.2em;
+}
+.option {
+  display: flex;
+  margin-bottom: 0.25em;
+}
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.check-box {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url(/images/custom-checkbox/off.svg);
+  margin-left: -1.2em;
+}
+.check-input:checked + .check-box {
+  background-image: url(/images/custom-checkbox/on.svg);
+}
+.check-input:focus + .check-box {
+  background-image: url(/images/custom-checkbox/focused.svg);
+}
+.check-input:checked:focus + .check-box {
+  background-image: url(/images/custom-checkbox/focused.svg);
+}
