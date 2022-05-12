@@ -34,8 +34,8 @@ html {
 /*header*/
 .header-container {
   background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border: 1px solid #ececec;
 }
 .header-container-2 {
@@ -45,6 +45,8 @@ html {
 .header-item {
   display: flex;
   position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-items {
   transition: color 250ms linear;
@@ -58,7 +60,7 @@ html {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -2px;
 }
 .header-logo-blue {
   font-family: Raleway;
@@ -115,7 +117,6 @@ html {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-right: ;
 }
 .header-studio {
   margin-right: 50px;
@@ -172,6 +173,8 @@ html {
 .header-info {
   display: flex;
   margin-left: auto;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .header-title-contacts {
   font-family: Roboto;
@@ -1505,11 +1508,14 @@ img {
 }
 .contact-form-chekbox-wrapper{
   margin-bottom: 30px;
+  position: relative;
+    left: 13px;
 }
 .contact-form-chekbox-label{
   font-size: 14px;
   display: flex;
   align-items: center;
+  
 }
 .contact-form-chekbox-label::before {
   display: inline-block;
@@ -1520,7 +1526,6 @@ img {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 10px;
-margin-left: 13px;
 }
 .check-input:checked + .contact-form-chekbox-label::before{
   background-color: #2196F3;
