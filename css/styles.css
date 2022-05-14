@@ -1517,6 +1517,7 @@ img {
   align-items: center;
   
 }
+
 .contact-form-chekbox-label::before {
   display: inline-block;
   width: 15px;
@@ -1527,7 +1528,13 @@ img {
   cursor: pointer;
   margin-right: 10px;
 }
-
+/* .contact-form-chekbox-label::before + .check-input:is(:focus, :valid){
+  border-color: #2196F3;
+} */
+/* .check-input:is(:focus, :valid),
+.check-input:is(:focus, :valid) + .contact-form-chekbox-label::before{
+  border-color: #2196F3;
+} */
 
 .check-input:checked + .contact-form-chekbox-label::before{
   background-color: #2196F3;
