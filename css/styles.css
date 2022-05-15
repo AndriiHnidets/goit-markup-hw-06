@@ -750,11 +750,11 @@ html {
   display: flex;
   align-items: baseline;
 }
-.footer-section-1 {
+/* .footer-section-1 {
   margin-right: 70px;
-}
+} */
 .footer-section-2 {
-  margin-bottom: 20px;
+  margin-left: 70px;
 }
 .footer-logo-blue {
   font-family: Raleway;
@@ -873,8 +873,7 @@ html {
   margin-left: 10px;
 }
 .footer-section-3 {
-  margin-left: 43px;
-  margin-bottom: 20px;
+  margin-left: auto;
 }
 .footer-input-mail {
   background: #2f303a;
@@ -895,7 +894,6 @@ html {
   padding-left: 16px;
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-right: 295px;
   margin-right: 12px;
 }
 .footer-input-contact {
@@ -911,19 +909,16 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 28px;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 188%;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: linear;
-  transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-button:hover,
 .footer-button:focus {
@@ -987,6 +982,7 @@ html {
   transition-duration: 250ms;
   transition-timing-function: linear;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hero-button-2:hover,
 .hero-button-2:focus {
@@ -1409,7 +1405,7 @@ img {
 .input-icon-title {
   position: absolute;
   left: 15px;
-  top: 50%;
+  top: 60%;
   /*transform: translateY(-50%);*/
   transition: fill 500ms;
 }
@@ -1421,13 +1417,13 @@ img {
   border-color: #2196f3;
 }
 .modal-button {
+  display: flex;
+  align-items: center;
   width: 200px;
   height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -1438,9 +1434,11 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: linear;
-  transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 124px;
-  margin-left: 124px;
+  border: 0;
+}
+.modal-button-main {
+  display: flex;
+  justify-content: center;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -1471,20 +1469,6 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/*.check-text::before {
-  content: '';
-  width: 16px;
-  height: 15px;
-  border-radius: 4px;
-  margin-right: 8px;
-}*/ /*
-.policy-check:checked + .check-text::before {
-  border: none;
-  background-image: url(../images/modal/icon-check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}*/
 .check-text span {
   width: 16px;
   height: 15px;
@@ -1527,6 +1511,9 @@ img {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .contact-form-chekbox-label::before + .check-input:is(:focus, :valid){
   border-color: #2196F3;
@@ -1535,6 +1522,12 @@ img {
 .check-input:is(:focus, :valid) + .contact-form-chekbox-label::before{
   border-color: #2196F3;
 } */
+.check-input:hover + .contact-form-chekbox-label::before,
+.check-input:focus + .contact-form-chekbox-labe::before {
+  background-color: #ffffff;
+  border: 2px solid #2196F3;
+  border-radius: 2px;
+}
 
 .check-input:checked + .contact-form-chekbox-label::before{
   background-color: #2196F3;
