@@ -523,16 +523,15 @@ html {
 
 .hero-team-description {
   padding-top: 30px;
-  margin-bottom: 16px;
 }
 .hero-team-pcs1 {
   background: url(4853.jpg);
   border-radius: 0px;
   width: 270px;
 }
-.hero-team-social {
+/* .hero-team-social {
   padding-bottom: 30px;
-}
+} */
 .hero-team-name1 {
   font-family: Roboto;
   font-style: normal;
@@ -554,6 +553,7 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 .hero-team-pcs2 {
   background: url(5844.jpg);
@@ -580,6 +580,7 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 .hero-team-pcs3 {
   background: url(16166.jpg);
@@ -606,6 +607,7 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 .hero-team-pcs4 {
   background: url(2968.jpg);
@@ -632,6 +634,7 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 .hero-social-link {
   width: 44px;
@@ -908,6 +911,7 @@ html {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: #2196f3;
   padding-left: 29px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1430,6 +1434,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  font-weight: 700;
   padding-left: 56px;
   padding-right: 55px;
   padding-top: 10px;
@@ -1502,6 +1507,7 @@ img {
   font-size: 14px;
   display: flex;
   align-items: center;
+  color: #757575;
   
 }
 
@@ -1510,6 +1516,7 @@ img {
   width: 15px;
   height: 16px;
   border: 2px solid #212121;
+  color: #757575;
   content: "";
   border-radius: 2px;
   cursor: pointer;
@@ -1530,6 +1537,8 @@ img {
   background-color: #ffffff;
   border: 2px solid #2196F3;
   border-radius: 2px;
+  width: 15px;
+  height: 16px;
 }
 
 .check-input:checked + .contact-form-chekbox-label::before{
