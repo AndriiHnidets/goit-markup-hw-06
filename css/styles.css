@@ -1525,13 +1525,6 @@ img {
   transition-timing-function: linear;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .contact-form-chekbox-label::before + .check-input:is(:focus, :valid){
-  border-color: #2196F3;
-} */
-/* .check-input:is(:focus, :valid),
-.check-input:is(:focus, :valid) + .contact-form-chekbox-label::before{
-  border-color: #2196F3;
-} */
 .check-input:hover + .contact-form-chekbox-label::before,
 .check-input:focus + .contact-form-chekbox-labe::before {
   background-color: #ffffff;
